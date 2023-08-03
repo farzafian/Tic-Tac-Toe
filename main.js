@@ -31,10 +31,10 @@ function setOnClickForCells() {
                 boardArray[index] = witchPlayerTurn;
                 let gameState = checkGameState();
                 if(gameState === 1) {
-                    winnerMessage.innerHTML = `<h3>${witchPlayerTurn} Selamat Kamu Menang 🗿</h3>`
+                    winnerMessage.innerHTML = `<h3>${witchPlayerTurn} Selamat Kamu Menang 😁 </h3>`
                     removeOnClickFromCells()
                 } else if (gameState === -1) {
-                    winnerMessage.innerHTML = `<h3>Imbang wir 🗿.</h3>`
+                    winnerMessage.innerHTML = `<h3>Imbang wir 🗿 </h3>`
                 } else {
                     witchPlayerTurn = witchPlayerTurn === "X" ? "O" : "X" // change turn
                     playerName.textContent = witchPlayerTurn
