@@ -17,7 +17,7 @@ const winningConditions = [
     [2, 4, 6]
 ]
 
-let witchPlayerTurn = Math.random() > .5 ? "X" : "O";
+let witchPlayerTurn = Math.random() > .5 ? "O" : "X";
 playerName.textContent = witchPlayerTurn
 board.dataset.playerActive = witchPlayerTurn;
 
